@@ -10,7 +10,7 @@ public class TicTacToeModel{
         
         X("X"), 
         O("O"), 
-        EMPTY(" ");
+        EMPTY("-");
 
         private String message;
         
@@ -48,9 +48,9 @@ public class TicTacToeModel{
         
     };
     
-    private Mark[][] grid; /* Game grid */
-    private boolean xTurn; /* True if X is current player */
-    private int width;     /* Size of game grid */
+    public Mark[][] grid; /* Game grid */
+    public boolean xTurn; /* True if X is current player */
+    public int width;     /* Size of game grid */
     
     /* DEFAULT CONSTRUCTOR */
     
@@ -73,12 +73,15 @@ public class TicTacToeModel{
         
         /* Create grid (width x width) as a 2D Mark array */
 
-        /* INSERT YOUR CODE HERE */
+        grid = new Mark[width][width];
 
         /* Initialize grid by filling every square with empty marks */
 
-        /* INSERT YOUR CODE HERE */
-        
+        for(int row = 0; row < grid.length; row++){
+            for(int column = 0; column < grid[row].length; column++){
+                this.grid[row][column] = Mark.EMPTY;
+            }
+        }       
     }
 	
     public boolean makeMark(int row, int col) {
@@ -87,40 +90,45 @@ public class TicTacToeModel{
            location, but only if the location is valid and if the square is
            empty! */
         
-        /* INSERT YOUR CODE HERE */
-
-        return false; /* remove this line! */
-        
+        if (xTurn = true && isValidSquare(row,col) && !isSquareMarked(row,col)){
+            this.grid[row][col] = Mark.X;
+            this.xTurn = false;
+            return true;
+        }
+        else if (xTurn = false && isValidSquare(row,col) && !isSquareMarked(row,col)){
+            this.grid[row][col] = Mark.O;
+            this.xTurn = true;
+            return true;
+            }
+        else
+            return false;
     }
 	
     private boolean isValidSquare(int row, int col) {
         
         /* Return true if specified location is within grid bounds */
         
-        /* INSERT YOUR CODE HERE */
-
-        return false; /* remove this line! */
-        
+        if(col < this.width && col >= 0 && row < this.width && row >= 0)
+			return true;
+		else
+			return false;      
     }
 	
     private boolean isSquareMarked(int row, int col) {
         
         /* Return true if square at specified location is marked */
         
-        /* INSERT YOUR CODE HERE */
-
-        return false; /* remove this line! */
-            
+        if(grid[row][col] == Mark.EMPTY)
+            return false;
+        else
+            return true;         
     }
 	
     public Mark getMark(int row, int col) {
         
         /* Return mark from the square at the specified location */
         
-        /* INSERT YOUR CODE HERE */
-
-        return null; /* remove this line! */
-            
+       return grid[row][col];          
     }
 	
     public Result getResult() {
@@ -128,11 +136,16 @@ public class TicTacToeModel{
         /* Use isMarkWin() to see if X or O is the winner, if the game is a
            tie, or if the game is not over, and return the corresponding Result
            value */
+        Mark mark = (!this.xTurn) ? Mark.X : Mark.O;
         
-        /* INSERT YOUR CODE HERE */
-
-        return null; /* remove this line! */
-
+        if(isMarkWin(mark) && isXTurn())
+            return Result.O;
+        if(isMarkWin(mark) && !isXTurn())
+            return Result.X;
+        if(isTie())
+            return Result.TIE;
+        else
+            return Result.NONE;
     }
 	
     private boolean isMarkWin(Mark mark) {
@@ -140,20 +153,75 @@ public class TicTacToeModel{
         /* Check the squares of the board to see if the specified mark is the
            winner */
         
-        /* INSERT YOUR CODE HERE */
-
-        return false; /* remove this line! */
-
+        if(slashWin(mark))
+            return true;
+        if(horiWin(mark))
+            return true;
+        if(vertWin(mark))
+            return true;
+        if(backslashWin(mark))
+            return true;
+        else
+            return false;
     }
-	
+    private boolean slashWin(Mark mark){
+        int markerCount = 0;
+        
+        for (int i = 0; i < this.width; ++i){
+            for (int j = 0; j < this.width; ++j){
+                if (j == (this.width - 1 - i) && grid [i][j] == mark)
+                    ++markerCount;
+            }
+        }
+        return markerCount == this.width;
+    }
+    private boolean backslashWin(Mark mark){
+        int markerCount = 0;
+        
+        for(int i = 0; i < this.width; ++i){
+            for(int j = 0; j < this.width; ++j){
+                if(i == j && grid[i][j] == mark)
+                    ++markerCount;
+            }
+        }
+        return markerCount == this.width;
+    }
+    private boolean horiWin(Mark mark){
+        int markerCount = 0;
+        
+        for(int i = 0; i <this.width; ++i){
+            for(int j = 0; j < this.width; ++j){
+                if(grid[i][j] == mark)
+                    ++markerCount;
+            }
+        }
+        return markerCount == this.width;
+    }
+    private boolean vertWin(Mark mark){
+        int markerCount = 0;
+    
+        for(int j = 0; j < this.width; ++j){
+            for(int i = 0; i <this.width; ++i){
+                if(grid[i][j]== mark)
+                    ++markerCount;
+            }   
+        }
+        return markerCount == this.width;
+    }
+    
     private boolean isTie() {
         
         /* Check the squares of the board to see if the game is a tie */
 
-        /* INSERT YOUR CODE HERE */
-
-        return false; /* remove this line! */
-        
+        /* Needs to account for more possible grid sizes */
+        int markerCount = 9;
+            for (int i = 0; i < this.width; ++i){
+                for (int j = 0; j < this.width; ++j){
+                    if(grid[i][j] == Mark.EMPTY)
+                        --markerCount;
+                }
+            }
+        return markerCount == 9; 
     }
 
     public boolean isGameover(){
