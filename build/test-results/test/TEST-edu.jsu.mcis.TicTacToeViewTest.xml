@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.TicTacToeViewTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2018-02-04T20:11:32" hostname="DESKTOP-6JM6DCA" time="0.002">
+<testsuite name="edu.jsu.mcis.TicTacToeViewTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2018-02-05T06:05:57" hostname="DESKTOP-6JM6DCA" time="0.044">
   <properties/>
-  <testcase name="testViewOfBlankGrid" classname="edu.jsu.mcis.TicTacToeViewTest" time="0.002">
+  <testcase name="testViewOfBlankGrid" classname="edu.jsu.mcis.TicTacToeViewTest" time="0.044">
     <failure message="java.lang.AssertionError: expected:&lt;29&gt; but was:&lt;33&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;29&gt; but was:&lt;33&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)

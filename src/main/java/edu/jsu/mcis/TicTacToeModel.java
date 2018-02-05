@@ -90,12 +90,12 @@ public class TicTacToeModel{
            location, but only if the location is valid and if the square is
            empty! */
         
-        if (xTurn = true && isValidSquare(row,col) && !isSquareMarked(row,col)){
+        if (isXTurn() && isValidSquare(row,col) && !isSquareMarked(row,col)){
             this.grid[row][col] = Mark.X;
             this.xTurn = false;
             return true;
         }
-        else if (xTurn = false && isValidSquare(row,col) && !isSquareMarked(row,col)){
+        else if (!isXTurn() && isValidSquare(row,col) && !isSquareMarked(row,col)){
             this.grid[row][col] = Mark.O;
             this.xTurn = true;
             return true;
@@ -107,21 +107,13 @@ public class TicTacToeModel{
     private boolean isValidSquare(int row, int col) {
         
         /* Return true if specified location is within grid bounds */
-        
-        if(col < this.width && col >= 0 && row < this.width && row >= 0)
-			return true;
-		else
-			return false;      
+        return col < this.width && col >= 0 && row < this.width && row >= 0;      
     }
 	
     private boolean isSquareMarked(int row, int col) {
         
         /* Return true if square at specified location is marked */
-        
-        if(grid[row][col] == Mark.EMPTY)
-            return false;
-        else
-            return true;         
+        return grid[row][col] != Mark.EMPTY;         
     }
 	
     public Mark getMark(int row, int col) {
@@ -152,6 +144,8 @@ public class TicTacToeModel{
         
         /* Check the squares of the board to see if the specified mark is the
            winner */
+        
+        //Needs to run through each
         
         if(slashWin(mark))
             return true;

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="edu.jsu.mcis.TicTacToeModelTest" tests="12" skipped="0" failures="7" errors="0" timestamp="2018-02-04T20:11:32" hostname="DESKTOP-6JM6DCA" time="0.007">
+<testsuite name="edu.jsu.mcis.TicTacToeModelTest" tests="12" skipped="0" failures="9" errors="0" timestamp="2018-02-05T06:05:56" hostname="DESKTOP-6JM6DCA" time="0.032">
   <properties/>
-  <testcase name="testGameIsWonByXDiagonallyFromTopLeftToBottomRight" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.005">
-    <failure message="java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;
+  <testcase name="testGameIsWonByXDiagonallyFromTopLeftToBottomRight" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.012">
+    <failure message="java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at edu.jsu.mcis.TicTacToeModelTest.testGameIsWonByXDiagonallyFromTopLeftToBottomRight(TicTacToeModelTest.java:152)
+	at edu.jsu.mcis.TicTacToeModelTest.testGameIsWonByXDiagonallyFromTopLeftToBottomRight(TicTacToeModelTest.java:156)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -57,13 +57,13 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="testGameIsOverByTieIfAllLocationsAreFilled" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0">
-    <failure message="java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;
+  <testcase name="testGameIsOverByTieIfAllLocationsAreFilled" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.002">
+    <failure message="java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;O&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at edu.jsu.mcis.TicTacToeModelTest.testGameIsOverByTieIfAllLocationsAreFilled(TicTacToeModelTest.java:99)
+	at edu.jsu.mcis.TicTacToeModelTest.testGameIsOverByTieIfAllLocationsAreFilled(TicTacToeModelTest.java:103)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -114,12 +114,12 @@
 </failure>
   </testcase>
   <testcase name="testGameIsWonByOWithFirstCol" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0">
-    <failure message="java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;
+    <failure message="java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;O&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at edu.jsu.mcis.TicTacToeModelTest.testGameIsWonByOWithFirstCol(TicTacToeModelTest.java:133)
+	at edu.jsu.mcis.TicTacToeModelTest.testGameIsWonByOWithFirstCol(TicTacToeModelTest.java:137)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -169,13 +169,13 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="testGameIsWonByXHorizontallyAcrossTopRow" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0">
-    <failure message="java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;
+  <testcase name="testGameIsWonByXHorizontallyAcrossTopRow" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.002">
+    <failure message="java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at edu.jsu.mcis.TicTacToeModelTest.testGameIsWonByXHorizontallyAcrossTopRow(TicTacToeModelTest.java:82)
+	at edu.jsu.mcis.TicTacToeModelTest.testGameIsWonByXHorizontallyAcrossTopRow(TicTacToeModelTest.java:86)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -226,14 +226,69 @@
 </failure>
   </testcase>
   <testcase name="testOutOfBoundsMark" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0"/>
-  <testcase name="testMarkXInUpperRightCorner" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0"/>
+  <testcase name="testMarkXInUpperRightCorner" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.001">
+    <failure message="java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.jsu.mcis.TicTacToeModelTest.testMarkXInUpperRightCorner(TicTacToeModelTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
   <testcase name="testGameisWonByODiagonallyFromBottomLeftToTopRight" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0">
-    <failure message="java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;X&gt;
+    <failure message="java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;none&gt; but was:&lt;O&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at edu.jsu.mcis.TicTacToeModelTest.testGameisWonByODiagonallyFromBottomLeftToTopRight(TicTacToeModelTest.java:169)
+	at edu.jsu.mcis.TicTacToeModelTest.testGameisWonByODiagonallyFromBottomLeftToTopRight(TicTacToeModelTest.java:173)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -283,13 +338,13 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="testMarkOInBottomLeftCorner" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0">
-    <failure message="java.lang.AssertionError: expected:&lt;O&gt; but was:&lt;X&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;O&gt; but was:&lt;X&gt;
+  <testcase name="testMarkOInBottomLeftCorner" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.001">
+    <failure message="java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at edu.jsu.mcis.TicTacToeModelTest.testMarkOInBottomLeftCorner(TicTacToeModelTest.java:49)
+	at edu.jsu.mcis.TicTacToeModelTest.testMarkOInBottomLeftCorner(TicTacToeModelTest.java:46)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -339,14 +394,14 @@
 	at java.lang.Thread.run(Thread.java:748)
 </failure>
   </testcase>
-  <testcase name="testInitialBoardIsEmpty" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0"/>
+  <testcase name="testInitialBoardIsEmpty" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.001"/>
   <testcase name="testXWinDiagonallyFromTopLeftToBottomRightOn5x5Board" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0">
-    <failure message="java.lang.AssertionError: expected:&lt;O&gt; but was:&lt;X&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;O&gt; but was:&lt;X&gt;
+    <failure message="java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;
 	at org.junit.Assert.fail(Assert.java:88)
 	at org.junit.Assert.failNotEquals(Assert.java:834)
 	at org.junit.Assert.assertEquals(Assert.java:118)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at edu.jsu.mcis.TicTacToeModelTest.testXWinDiagonallyFromTopLeftToBottomRightOn5x5Board(TicTacToeModelTest.java:187)
+	at edu.jsu.mcis.TicTacToeModelTest.testXWinDiagonallyFromTopLeftToBottomRightOn5x5Board(TicTacToeModelTest.java:185)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -397,7 +452,62 @@
 </failure>
   </testcase>
   <testcase name="testGameIsNotOverAfterTheFirstMark" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0"/>
-  <testcase name="testUnableToMarkOverExistingMark" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.0"/>
+  <testcase name="testUnableToMarkOverExistingMark" classname="edu.jsu.mcis.TicTacToeModelTest" time="0.001">
+    <failure message="java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;X&gt; but was:&lt;O&gt;
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:118)
+	at org.junit.Assert.assertEquals(Assert.java:144)
+	at edu.jsu.mcis.TicTacToeModelTest.testUnableToMarkOverExistingMark(TicTacToeModelTest.java:58)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.internal.runners.statements.RunBefores.evaluate(RunBefores.java:26)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.runTestClass(JUnitTestClassExecuter.java:114)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecuter.execute(JUnitTestClassExecuter.java:57)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassProcessor.processTestClass(JUnitTestClassProcessor.java:66)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy1.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:146)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:128)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
