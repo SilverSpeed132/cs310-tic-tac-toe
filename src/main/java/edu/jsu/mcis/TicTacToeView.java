@@ -15,7 +15,13 @@ public class TicTacToeView {
     public void viewModel() {
         
         /* Print the board to the console (see examples) */
+       boolean initializeGrid = false;
         
+       if(initializeGrid == false){
+            System.out.print("\n  012\n\n0 ---\n1 ---\n2 ---\n\n\n\n");
+            initializeGrid = true;
+       }
+       else{
        System.out.println("");
         for(int i = 0; i < model.getWidth() + 2; ++i){
             
@@ -41,7 +47,7 @@ public class TicTacToeView {
 		System.out.println("");
 		}		
 		System.out.println(""); 
-        
+       }
     }
 
     public void showNextMovePrompt() {
@@ -71,12 +77,7 @@ public class TicTacToeView {
 
         /* Display final winner */
 
-        System.out.println(r + "!");
-        System.out.println(model.slashWin(TicTacToeModel.Mark.X));
-        System.out.println(model.backslashWin(TicTacToeModel.Mark.X));
-        System.out.println(model.horiWin(TicTacToeModel.Mark.X));
-        System.out.println(model.vertWin(TicTacToeModel.Mark.X));
-
+       System.out.println(r + "!");
     }
 	
 }
