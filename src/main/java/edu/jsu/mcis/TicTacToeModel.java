@@ -158,7 +158,7 @@ public class TicTacToeModel{
         else
             return false;
     }
-    private boolean slashWin(Mark mark){
+    public boolean slashWin(Mark mark){
         int markerCount = 0;
         
         for (int i = 0; i < this.width; ++i){
@@ -169,7 +169,7 @@ public class TicTacToeModel{
         }
         return markerCount == this.width;
     }
-    private boolean backslashWin(Mark mark){
+    public boolean backslashWin(Mark mark){
         int markerCount = 0;
         
         for(int i = 0; i < this.width; ++i){
@@ -180,27 +180,38 @@ public class TicTacToeModel{
         }
         return markerCount == this.width;
     }
-    private boolean horiWin(Mark mark){
+    public boolean horiWin(Mark mark){
         int markerCount = 0;
+        boolean didWin = false;
         
         for(int i = 0; i <this.width; ++i){
+            markerCount = 0;
             for(int j = 0; j < this.width; ++j){
                 if(grid[i][j] == mark)
                     ++markerCount;
             }
+            if (markerCount == this.width){
+                didWin = true;
+            }
         }
-        return markerCount == this.width;
+        return didWin;
     }
-    private boolean vertWin(Mark mark){
+    public boolean vertWin(Mark mark){
         int markerCount = 0;
-    
+        boolean didWin = false;
+        
         for(int j = 0; j < this.width; ++j){
+            markerCount = 0;
             for(int i = 0; i <this.width; ++i){
                 if(grid[i][j]== mark)
                     ++markerCount;
-            }   
+                   
+            } 
+            if (markerCount == this.width){
+                didWin = true;
+            }
         }
-        return markerCount == this.width;
+        return didWin;
     }
     
     private boolean isTie() {

@@ -72,6 +72,10 @@ public class TicTacToeView {
         /* Display final winner */
 
         System.out.println(r + "!");
+        System.out.println(model.slashWin(TicTacToeModel.Mark.X));
+        System.out.println(model.backslashWin(TicTacToeModel.Mark.X));
+        System.out.println(model.horiWin(TicTacToeModel.Mark.X));
+        System.out.println(model.vertWin(TicTacToeModel.Mark.X));
 
     }
 	
