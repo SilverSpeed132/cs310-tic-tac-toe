@@ -3,6 +3,7 @@ package edu.jsu.mcis;
 public class TicTacToeView {
 
     private TicTacToeModel model;
+    private boolean initializeGrid = false;
     
     /* CONSTRUCTOR */
 	
@@ -15,7 +16,6 @@ public class TicTacToeView {
     public void viewModel() {
         
         /* Print the board to the console (see examples) */
-       boolean initializeGrid = false;
         
        if(initializeGrid == false){
             System.out.print("\n  012\n\n0 ---\n1 ---\n2 ---\n\n\n\n");
