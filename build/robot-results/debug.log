@@ -1,0 +1,274 @@
+==============================================================================
+20180205 20:01:16.888 - INFO - + START SUITE: Acceptancetest [ ]
+==============================================================================
+20180205 20:01:16.939 - INFO - +- START SUITE: Acceptancetest.TicTacToeTests [ ]
+==============================================================================
+20180205 20:01:16.955 - INFO - +-- START TEST: Win Diagonally as X [ ]
+------------------------------------------------------------------------------
+20180205 20:01:16.963 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
+20180205 20:01:16.969 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:16.972 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
+20180205 20:01:16.978 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (6)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:16.980 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20180205 20:01:16.988 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:16.996 - INFO - ${m} = X
+20180205 20:01:16.999 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (10)
+20180205 20:01:17.002 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.044 - INFO - +---- END KW: BuiltIn.Should Be Equal (37)
+20180205 20:01:17.066 - INFO - +--- END KW: Check Location (69)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.077 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 1 ]
+20180205 20:01:17.104 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (23)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.109 - INFO - +--- START KW: Check Location [ 0 | 1 | O ]
+20180205 20:01:17.141 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.170 - INFO - ${m} = O
+20180205 20:01:17.180 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (34)
+20180205 20:01:17.188 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.225 - INFO - +---- END KW: BuiltIn.Should Be Equal (34)
+20180205 20:01:17.241 - INFO - +--- END KW: Check Location (125)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.252 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
+20180205 20:01:17.267 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (17)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.269 - INFO - +--- START KW: Check Location [ 0 | 0 | X ]
+20180205 20:01:17.298 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.325 - INFO - ${m} = X
+20180205 20:01:17.337 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (34)
+20180205 20:01:17.343 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.372 - INFO - +---- END KW: BuiltIn.Should Be Equal (29)
+20180205 20:01:17.374 - INFO - +--- END KW: Check Location (106)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.375 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
+20180205 20:01:17.379 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.620 - INFO - +--- START KW: Check Location [ 0 | 2 | O ]
+20180205 20:01:17.636 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.640 - INFO - ${m} = O
+20180205 20:01:17.642 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (5)
+20180205 20:01:17.643 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.649 - INFO - +---- END KW: BuiltIn.Should Be Equal (5)
+20180205 20:01:17.652 - INFO - +--- END KW: Check Location (271)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.653 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
+20180205 20:01:17.655 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.657 - INFO - +--- START KW: Check Location [ 2 | 2 | X ]
+20180205 20:01:17.663 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.666 - INFO - ${m} = X
+20180205 20:01:17.668 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20180205 20:01:17.668 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.676 - INFO - +---- END KW: BuiltIn.Should Be Equal (7)
+20180205 20:01:17.677 - INFO - +--- END KW: Check Location (21)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.678 - INFO - +--- START KW: Winner Should Be [ X ]
+20180205 20:01:17.680 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
+20180205 20:01:17.682 - INFO - ${m} = X
+20180205 20:01:17.691 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (7)
+20180205 20:01:17.691 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.694 - INFO - +---- END KW: BuiltIn.Should Be Equal (2)
+20180205 20:01:17.696 - INFO - +--- END KW: Winner Should Be (16)
+------------------------------------------------------------------------------
+20180205 20:01:17.717 - INFO - +-- END TEST: Win Diagonally as X (747)
+------------------------------------------------------------------------------
+20180205 20:01:17.729 - INFO - +-- START TEST: Win Horizontally as O [ ]
+------------------------------------------------------------------------------
+20180205 20:01:17.738 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
+20180205 20:01:17.740 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.740 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
+20180205 20:01:17.742 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.743 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20180205 20:01:17.749 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.751 - INFO - ${m} = X
+20180205 20:01:17.752 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20180205 20:01:17.753 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.756 - INFO - +---- END KW: BuiltIn.Should Be Equal (3)
+20180205 20:01:17.758 - INFO - +--- END KW: Check Location (15)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.759 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 0 ]
+20180205 20:01:17.762 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.763 - INFO - +--- START KW: Check Location [ 2 | 0 | O ]
+20180205 20:01:17.771 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.773 - INFO - ${m} = O
+20180205 20:01:17.774 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20180205 20:01:17.775 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.779 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20180205 20:01:17.781 - INFO - +--- END KW: Check Location (17)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.782 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
+20180205 20:01:17.786 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (5)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.795 - INFO - +--- START KW: Check Location [ 0 | 0 | X ]
+20180205 20:01:17.807 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.814 - INFO - ${m} = X
+20180205 20:01:17.815 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (9)
+20180205 20:01:17.815 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.823 - INFO - +---- END KW: BuiltIn.Should Be Equal (5)
+20180205 20:01:17.824 - INFO - +--- END KW: Check Location (33)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.825 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
+20180205 20:01:17.826 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.827 - INFO - +--- START KW: Check Location [ 2 | 2 | O ]
+20180205 20:01:17.830 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.835 - INFO - ${m} = O
+20180205 20:01:17.836 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (6)
+20180205 20:01:17.837 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.842 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20180205 20:01:17.844 - INFO - +--- END KW: Check Location (17)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.845 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
+20180205 20:01:17.846 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.847 - INFO - +--- START KW: Check Location [ 0 | 2 | X ]
+20180205 20:01:17.856 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.858 - INFO - ${m} = X
+20180205 20:01:17.859 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (3)
+20180205 20:01:17.859 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.862 - INFO - +---- END KW: BuiltIn.Should Be Equal (2)
+20180205 20:01:17.863 - INFO - +--- END KW: Check Location (15)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.863 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 1 ]
+20180205 20:01:17.864 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.865 - INFO - +--- START KW: Check Location [ 2 | 1 | O ]
+20180205 20:01:17.867 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.869 - INFO - ${m} = O
+20180205 20:01:17.870 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (3)
+20180205 20:01:17.871 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.873 - INFO - +---- END KW: BuiltIn.Should Be Equal (2)
+20180205 20:01:17.874 - INFO - +--- END KW: Check Location (8)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.874 - INFO - +--- START KW: Winner Should Be [ O ]
+20180205 20:01:17.875 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
+20180205 20:01:17.876 - INFO - ${m} = O
+20180205 20:01:17.877 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (2)
+20180205 20:01:17.878 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.881 - INFO - +---- END KW: BuiltIn.Should Be Equal (3)
+20180205 20:01:17.883 - INFO - +--- END KW: Winner Should Be (9)
+------------------------------------------------------------------------------
+20180205 20:01:17.886 - INFO - +-- END TEST: Win Horizontally as O (161)
+------------------------------------------------------------------------------
+20180205 20:01:17.888 - INFO - +-- START TEST: Force a Tie [ ]
+------------------------------------------------------------------------------
+20180205 20:01:17.890 - INFO - +--- START KW: keywords.TicTacToeKeywords.Start New Game [ ]
+20180205 20:01:17.893 - INFO - +--- END KW: keywords.TicTacToeKeywords.Start New Game (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.893 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 1 ]
+20180205 20:01:17.900 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (6)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.907 - INFO - +--- START KW: Check Location [ 1 | 1 | X ]
+20180205 20:01:17.912 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.916 - INFO - ${m} = X
+20180205 20:01:17.917 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20180205 20:01:17.918 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.921 - INFO - +---- END KW: BuiltIn.Should Be Equal (3)
+20180205 20:01:17.922 - INFO - +--- END KW: Check Location (15)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.922 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 0 ]
+20180205 20:01:17.924 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.925 - INFO - +--- START KW: Check Location [ 0 | 0 | O ]
+20180205 20:01:17.930 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.934 - INFO - ${m} = O
+20180205 20:01:17.938 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (5)
+20180205 20:01:17.938 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.941 - INFO - +---- END KW: BuiltIn.Should Be Equal (3)
+20180205 20:01:17.942 - INFO - +--- END KW: Check Location (17)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.943 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 0 ]
+20180205 20:01:17.954 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.957 - INFO - +--- START KW: Check Location [ 2 | 0 | X ]
+20180205 20:01:17.960 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.963 - INFO - ${m} = X
+20180205 20:01:17.964 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (4)
+20180205 20:01:17.965 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.969 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20180205 20:01:17.970 - INFO - +--- END KW: Check Location (14)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.971 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 2 ]
+20180205 20:01:17.974 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (3)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.976 - INFO - +--- START KW: Check Location [ 0 | 2 | O ]
+20180205 20:01:17.979 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:17.985 - INFO - ${m} = O
+20180205 20:01:17.988 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (8)
+20180205 20:01:17.988 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:17.998 - INFO - +---- END KW: BuiltIn.Should Be Equal (9)
+20180205 20:01:17.999 - INFO - +--- END KW: Check Location (22)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:17.999 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 0 | 1 ]
+20180205 20:01:18.002 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.003 - INFO - +--- START KW: Check Location [ 0 | 1 | X ]
+20180205 20:01:18.004 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:18.010 - INFO - ${m} = X
+20180205 20:01:18.011 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (7)
+20180205 20:01:18.012 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:18.019 - INFO - +---- END KW: BuiltIn.Should Be Equal (7)
+20180205 20:01:18.020 - INFO - +--- END KW: Check Location (18)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.021 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 1 ]
+20180205 20:01:18.022 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.023 - INFO - +--- START KW: Check Location [ 2 | 1 | O ]
+20180205 20:01:18.024 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:18.026 - INFO - ${m} = O
+20180205 20:01:18.026 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (2)
+20180205 20:01:18.027 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:18.030 - INFO - +---- END KW: BuiltIn.Should Be Equal (1)
+20180205 20:01:18.031 - INFO - +--- END KW: Check Location (9)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.032 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 2 ]
+20180205 20:01:18.033 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.034 - INFO - +--- START KW: Check Location [ 1 | 2 | X ]
+20180205 20:01:18.037 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:18.039 - INFO - ${m} = X
+20180205 20:01:18.040 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (3)
+20180205 20:01:18.040 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:18.046 - INFO - +---- END KW: BuiltIn.Should Be Equal (4)
+20180205 20:01:18.046 - INFO - +--- END KW: Check Location (12)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.047 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 1 | 0 ]
+20180205 20:01:18.050 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (2)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.050 - INFO - +--- START KW: Check Location [ 1 | 0 | O ]
+20180205 20:01:18.052 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:18.054 - INFO - ${m} = O
+20180205 20:01:18.054 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (2)
+20180205 20:01:18.055 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:18.056 - INFO - +---- END KW: BuiltIn.Should Be Equal (2)
+20180205 20:01:18.057 - INFO - +--- END KW: Check Location (7)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.057 - INFO - +--- START KW: keywords.TicTacToeKeywords.Mark Location [ 2 | 2 ]
+20180205 20:01:18.059 - INFO - +--- END KW: keywords.TicTacToeKeywords.Mark Location (1)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.059 - INFO - +--- START KW: Check Location [ 2 | 2 | X ]
+20180205 20:01:18.061 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Mark [ ${row} | ${col} ]
+20180205 20:01:18.062 - INFO - ${m} = X
+20180205 20:01:18.063 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Mark (3)
+20180205 20:01:18.064 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:18.067 - INFO - +---- END KW: BuiltIn.Should Be Equal (2)
+20180205 20:01:18.070 - INFO - +--- END KW: Check Location (11)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+20180205 20:01:18.073 - INFO - +--- START KW: Winner Should Be [ TIE ]
+20180205 20:01:18.075 - INFO - +---- START KW: keywords.TicTacToeKeywords.Get Winner [ ]
+20180205 20:01:18.076 - INFO - ${m} = TIE
+20180205 20:01:18.076 - INFO - +---- END KW: keywords.TicTacToeKeywords.Get Winner (1)
+20180205 20:01:18.077 - INFO - +---- START KW: BuiltIn.Should Be Equal [ ${m} | ${mark} ]
+20180205 20:01:18.079 - INFO - +---- END KW: BuiltIn.Should Be Equal (2)
+20180205 20:01:18.080 - INFO - +--- END KW: Winner Should Be (9)
+------------------------------------------------------------------------------
+20180205 20:01:18.082 - INFO - +-- END TEST: Force a Tie (194)
+------------------------------------------------------------------------------
+20180205 20:01:18.107 - INFO - +- END SUITE: Acceptancetest.TicTacToeTests (1195)
+==============================================================================
+20180205 20:01:18.155 - INFO - + END SUITE: Acceptancetest (1528)
+==============================================================================

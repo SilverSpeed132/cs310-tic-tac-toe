@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TicTacToeController.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cs310-tic-tac-toe</a> &gt; <a href="index.source.html" class="el_package">edu.jsu.mcis</a> &gt; <span class="el_source">TicTacToeController.java</span></div><h1>TicTacToeController.java</h1><pre class="source lang-java linenums">package edu.jsu.mcis;
+
+import java.util.Scanner;
+
+public class TicTacToeController {
+
+    private TicTacToeModel model;
+    private TicTacToeView view;
+    private Scanner keyboard;
+    
+    /* CONSTRUCTOR */
+
+<span class="nc" id="L13">    public TicTacToeController(TicTacToeModel model, TicTacToeView view) {</span>
+        
+        /* Initialize model and view */
+
+<span class="nc" id="L17">        this.model = model;</span>
+<span class="nc" id="L18">        this.view = view;</span>
+        
+        /* Initialize scanner (for console keyboard) */
+        
+<span class="nc" id="L22">        keyboard = new Scanner(System.in);</span>
+
+<span class="nc" id="L24">    }</span>
+
+    public void controlModel() {
+        
+        /* Prompt player for next move using view's showNextMovePrompt() */
+        
+<span class="nc" id="L30">        view.showNextMovePrompt();</span>
+        
+        /* Receive and validate input, which should be read at the keyboard as
+           two integers, the row and the column (for example, &quot;1 1&quot; for the
+           center square of a 3 x 3 grid).  Make mark if input is valid, or show
+           error message using view's showInputError() if input is invalid. */
+        
+<span class="nc" id="L37">        int row = keyboard.nextInt();</span>
+<span class="nc" id="L38">        int col = keyboard.nextInt();</span>
+        
+<span class="nc bnc" id="L40" title="All 2 branches missed.">        if(model.makeMark(row,col))</span>
+<span class="nc" id="L41">            model.makeMark(row,col);</span>
+        else
+<span class="nc" id="L43">            view.showInputError();     </span>
+<span class="nc" id="L44">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>
