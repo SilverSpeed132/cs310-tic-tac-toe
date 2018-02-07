@@ -44,6 +44,20 @@ public class TicTacToeView extends JFrame{
         
         add(panel);       
     }
+    
+    public class e implements ActionListener {
+        @Override
+        public void actionPerformed(ActionEvent e){
+        JButton btn = (JButton) e.getSource();
+        if(model.isXTurn()){
+            btn.setText("X");
+            }
+        else {
+            btn.setText("O");
+            }
+        }
+    }
+    
     public void viewModel() {
         
         /* Print the board to the console (see examples) */
