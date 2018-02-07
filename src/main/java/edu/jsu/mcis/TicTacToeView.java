@@ -26,10 +26,12 @@ public class TicTacToeView extends JFrame{
         for(int i=0; i < 3; i++){
             for(int j =0; j < 3; j++){
                 grid[i][j] = new JButton();
-                //grid[i][j].addActionListener(new actionListener ae(){
-                 //   @Override
+                grid[i][j].addActionListener(new e());
+                
+                grid[i][j].putClientProperty("row", i);
+                grid[i][j].putClientProperty("column", j);
+                   
                     
-               // });
                 grid[i][j].setName("Square" + i + j);
                 grid[i][j].setText("-");
                 panel.add(grid[i][j]);
@@ -40,29 +42,8 @@ public class TicTacToeView extends JFrame{
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         
-        add(panel);
-        
-    this.model = model;
-        
+        add(panel);       
     }
-    
-    public void TTTGUI() {
-        
-        grid = new JButton[3][3];
-        for(int i=0; i < 3; i++){
-            for(int j =0; j < 3; i++){
-                grid[i][j] = new JButton();
-                //grid[i][j].addActionListener(new actionListener ae(){
-                 //   @Override
-                    
-               // });
-                grid[i][j].setName("Square" + i + j);
-                grid[i][j].setText("-");
-                panel.add(grid[i][j]);
-            }
-        }
-    }
-  
     public void viewModel() {
         
         /* Print the board to the console (see examples) */
