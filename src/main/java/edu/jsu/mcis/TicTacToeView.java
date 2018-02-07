@@ -1,18 +1,68 @@
 package edu.jsu.mcis;
 
-public class TicTacToeView {
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JButton;
+
+public class TicTacToeView extends JFrame{
 
     private TicTacToeModel model;
     private boolean initializeGrid = false;
-    
-    /* CONSTRUCTOR */
+    /* CONSTRUCTOR */    
+    JButton[][] grid;
+    JPanel panel;
 	
     public TicTacToeView(TicTacToeModel model) {
         
         this.model = model;
         
+        setTitle("TicTacToe");
+        panel = new JPanel();
+        panel.setLayout(new GridLayout(model.width,model.width));
+        
+       grid = new JButton[3][3];
+        for(int i=0; i < 3; i++){
+            for(int j =0; j < 3; j++){
+                grid[i][j] = new JButton();
+                //grid[i][j].addActionListener(new actionListener ae(){
+                 //   @Override
+                    
+               // });
+                grid[i][j].setName("Square" + i + j);
+                grid[i][j].setText("-");
+                panel.add(grid[i][j]);
+            }
+        }
+        
+        setSize(600,600);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setVisible(true);
+        
+        add(panel);
+        
+    this.model = model;
+        
     }
-	
+    
+    public void TTTGUI() {
+        
+        grid = new JButton[3][3];
+        for(int i=0; i < 3; i++){
+            for(int j =0; j < 3; i++){
+                grid[i][j] = new JButton();
+                //grid[i][j].addActionListener(new actionListener ae(){
+                 //   @Override
+                    
+               // });
+                grid[i][j].setName("Square" + i + j);
+                grid[i][j].setText("-");
+                panel.add(grid[i][j]);
+            }
+        }
+    }
+  
     public void viewModel() {
         
         /* Print the board to the console (see examples) */
