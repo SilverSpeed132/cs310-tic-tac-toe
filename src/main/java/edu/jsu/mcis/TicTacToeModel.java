@@ -104,13 +104,13 @@ public class TicTacToeModel{
             return false;
     }
 	
-    private boolean isValidSquare(int row, int col) {
+    public boolean isValidSquare(int row, int col) {
         
         /* Return true if specified location is within grid bounds */
         return col < this.width && col >= 0 && row < this.width && row >= 0;      
     }
 	
-    private boolean isSquareMarked(int row, int col) {
+    public boolean isSquareMarked(int row, int col) {
         
         /* Return true if square at specified location is marked */
         return grid[row][col] != Mark.EMPTY;         

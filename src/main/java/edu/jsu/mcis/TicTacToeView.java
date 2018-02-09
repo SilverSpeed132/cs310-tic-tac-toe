@@ -49,11 +49,21 @@ public class TicTacToeView extends JFrame{
         @Override
         public void actionPerformed(ActionEvent e){
         JButton btn = (JButton) e.getSource();
-        if(model.isXTurn()){
-            btn.setText("X");
+        String select = btn.getName();
+        
+        int row = Integer.parseInt(select.substring(6,7));
+        int col = Integer.parseInt(select.substring(7,8));
+        
+        
+        if (model.isValidSquare(row,col) && !model.isSquareMarked(row,col)){
+            if(model.isXTurn()){
+                btn.setText("X");
+                model.makeMark(row,col);
             }
-        else {
-            btn.setText("O");
+            else{
+                btn.setText("O");
+                model.makeMark(row,col);
+                }
             }
         }
     }
