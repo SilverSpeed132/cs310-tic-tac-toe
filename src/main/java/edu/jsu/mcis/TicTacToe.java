@@ -1,5 +1,7 @@
 package edu.jsu.mcis;
 
+import javax.swing.JFrame;
+
 public class TicTacToe {
 
     private static final int DEFAULT_WIDTH = 3;        
@@ -28,6 +30,17 @@ public class TicTacToe {
         TicTacToeController controller = new TicTacToeController(model, view);
         
         /* MAIN LOOP */
+        
+        JFrame frame = new JFrame("Tic-Tac-Toe");
+        
+        frame.setSize(800,800);
+        
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.getContentPane().add(view.container);
+        frame.pack();
+        frame.setVisible(true);
+        
+        
 
         while (!model.isGameover()){
             

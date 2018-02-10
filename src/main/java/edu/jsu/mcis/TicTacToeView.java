@@ -2,35 +2,45 @@ package edu.jsu.mcis;
 
 import java.awt.*;
 import java.awt.event.*;
+import javax.swing.BoxLayout;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.JButton;
+import javax.swing.JLabel;
 
-public class TicTacToeView extends JFrame{
+public class TicTacToeView extends JPanel implements ActionListener{
 
     private TicTacToeModel model;
     private boolean initializeGrid = false;
     /* CONSTRUCTOR */    
     JButton[][] grid;
     JPanel panel;
+    private JLabel resultLabel;
+    public JPanel container;
 	
     public TicTacToeView(TicTacToeModel model) {
         
         this.model = model;
         
-        setTitle("TicTacToe");
+     
         panel = new JPanel();
         panel.setLayout(new GridLayout(model.width,model.width));
+        resultLabel = new JLabel();
+        resultLabel.setName("ResultLabel");
+        resultLabel.setText("Winner: ");
+        container = new JPanel();
+        container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
         
        grid = new JButton[3][3];
         for(int i=0; i < 3; i++){
             for(int j =0; j < 3; j++){
                 grid[i][j] = new JButton();
-                grid[i][j].addActionListener(new e());
+                grid[i][j].addActionListener(this);
                 
                 grid[i][j].putClientProperty("row", i);
                 grid[i][j].putClientProperty("column", j);
-                   
+                grid[i][j].setPreferredSize(new Dimension(64,64));
+                grid[i][j].setLocation((i*20)+20,(j*20)+20);
                     
                 grid[i][j].setName("Square" + i + j);
                 grid[i][j].setText("-");
@@ -39,34 +49,13 @@ public class TicTacToeView extends JFrame{
         }
         
         setSize(600,600);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setVisible(true);
         
-        add(panel);       
+        container.add(panel);   
+        container.add(resultLabel);
     }
     
-    public class e implements ActionListener {
-        @Override
-        public void actionPerformed(ActionEvent e){
-        JButton btn = (JButton) e.getSource();
-        String select = btn.getName();
-        
-        int row = Integer.parseInt(select.substring(6,7));
-        int col = Integer.parseInt(select.substring(7,8));
-        
-        
-        if (model.isValidSquare(row,col) && !model.isSquareMarked(row,col)){
-            if(model.isXTurn()){
-                btn.setText("X");
-                model.makeMark(row,col);
-            }
-            else{
-                btn.setText("O");
-                model.makeMark(row,col);
-                }
-            }
-        }
-    }
+ 
     
     public void viewModel() {
         
@@ -132,7 +121,30 @@ public class TicTacToeView extends JFrame{
 
         /* Display final winner */
 
-       System.out.println(r + "!");
+       resultLabel.setText(r);
     }
-	
-}
+
+        @Override
+        public void actionPerformed(ActionEvent e){
+        JButton btn = (JButton) e.getSource();
+        String select = btn.getName();
+        
+        int row = Integer.parseInt(select.substring(6,7));
+        int col = Integer.parseInt(select.substring(7,8));
+        
+        
+        if (model.isValidSquare(row,col) && !model.isSquareMarked(row,col)){
+            if(model.isXTurn()){
+                btn.setText("X");
+                model.makeMark(row,col); 
+                
+            }
+            else{
+                btn.setText("O");
+                model.makeMark(row,col);
+               
+                }
+            }
+        }
+
+    }	
