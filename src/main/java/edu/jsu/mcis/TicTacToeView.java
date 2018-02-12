@@ -32,19 +32,19 @@ public class TicTacToeView extends JPanel implements ActionListener{
         container.setLayout(new BoxLayout(container, BoxLayout.Y_AXIS));
         
        grid = new JButton[3][3];
-        for(int i=0; i < 3; i++){
-            for(int j =0; j < 3; j++){
-                grid[i][j] = new JButton();
-                grid[i][j].addActionListener(this);
+        for(int row=0; row < 3; row++){
+            for(int col =0; col < 3; col++){
+                grid[row][col] = new JButton();
+                grid[row][col].addActionListener(this);
                 
-                grid[i][j].putClientProperty("row", i);
-                grid[i][j].putClientProperty("column", j);
-                grid[i][j].setPreferredSize(new Dimension(64,64));
-                grid[i][j].setLocation((i*20)+20,(j*20)+20);
+                grid[row][col].putClientProperty("row", row);
+                grid[row][col].putClientProperty("col", col);
+                grid[row][col].setPreferredSize(new Dimension(64,64));
+                grid[row][col].setLocation((row*20)+20,(col*20)+20);
                     
-                grid[i][j].setName("Square" + i + j);
-                grid[i][j].setText("-");
-                panel.add(grid[i][j]);
+                grid[row][col].setName("Square" + row + col);
+                grid[row][col].setText("-");
+                panel.add(grid[row][col]);
             }
         }
         
@@ -132,19 +132,23 @@ public class TicTacToeView extends JPanel implements ActionListener{
         int row = Integer.parseInt(select.substring(6,7));
         int col = Integer.parseInt(select.substring(7,8));
         
-        
-        if (model.isValidSquare(row,col) && !model.isSquareMarked(row,col)){
-            if(model.isXTurn()){
-                btn.setText("X");
-                model.makeMark(row,col); 
+        if (!model.isGameover()){
+            if (model.isValidSquare(row,col) && !model.isSquareMarked(row,col)){
+                if(model.isXTurn()){
+                    btn.setText("X");
+                    model.makeMark(row,col); 
                 
-            }
-            else{
-                btn.setText("O");
-                model.makeMark(row,col);
+                }
+                else{
+                    btn.setText("O");
+                    model.makeMark(row,col);
                
+                    }
                 }
             }
+        if(model.isGameover()){
+            System.out.print("lmao");
+        
         }
-
+        }
     }	
