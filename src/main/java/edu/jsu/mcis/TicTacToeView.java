@@ -20,6 +20,8 @@ public class TicTacToeView extends JPanel implements ActionListener{
 	
     public TicTacToeView(TicTacToeModel model) {
         
+        //Sets up the GUI
+        
         this.model = model;
         
      
@@ -126,12 +128,16 @@ public class TicTacToeView extends JPanel implements ActionListener{
 
         @Override
         public void actionPerformed(ActionEvent e){
+            
+        //Gets the button pressed and its relevant properties
         JButton btn = (JButton) e.getSource();
         String select = btn.getName();
+        
         
         int row = Integer.parseInt(select.substring(6,7));
         int col = Integer.parseInt(select.substring(7,8));
         
+        //If game is not over, makes a button press behave properly
         if (!model.isGameover()){
             if (model.isValidSquare(row,col) && !model.isSquareMarked(row,col)){
                 if(model.isXTurn()){
@@ -146,9 +152,22 @@ public class TicTacToeView extends JPanel implements ActionListener{
                     }
                 }
             }
+        //If game is over, sets the result label to display the winner/tie status
         if(model.isGameover()){
-            System.out.print("lmao");
-        
-        }
+            if(null != model.getResult())
+                switch (model.getResult()) {
+                    case X:
+                        this.showResult("X");
+                        break;
+                    case O:
+                        this.showResult("O");
+                        break;
+                    case TIE:
+                        this.showResult("TIE");
+                        break;
+                    default:
+                        break;
+                }       
+            }
         }
     }	

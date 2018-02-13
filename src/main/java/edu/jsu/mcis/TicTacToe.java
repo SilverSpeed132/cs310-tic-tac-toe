@@ -39,21 +39,5 @@ public class TicTacToe {
         frame.getContentPane().add(view.container);
         frame.pack();
         frame.setVisible(true);
-        
-        
-
-        /*while (!model.isGameover()){
-            
-            view.viewModel();
-            controller.controlModel();*/
-            
-        //}
-        
-        /* Game is over; show the final board and the winner */
-
-        //view.viewModel();
-
-        //view.showResult(model.getResult().toString());
-
     }
 }

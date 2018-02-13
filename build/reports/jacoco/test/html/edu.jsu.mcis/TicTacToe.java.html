@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>TicTacToe.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">cs310-tic-tac-toe</a> &gt; <a href="index.source.html" class="el_package">edu.jsu.mcis</a> &gt; <span class="el_source">TicTacToe.java</span></div><h1>TicTacToe.java</h1><pre class="source lang-java linenums">package edu.jsu.mcis;
+
+import javax.swing.JFrame;
+
+<span class="nc" id="L5">public class TicTacToe {</span>
+
+    private static final int DEFAULT_WIDTH = 3;        
+
+    public static void main(String[] args) {
+        
+        /* Set initial size of game board (default is 3x3) */
+
+<span class="nc" id="L13">        int width = DEFAULT_WIDTH;</span>
+        
+        /* If a different size is provided as a command-line argument, use it instead */
+
+<span class="nc bnc" id="L17" title="All 2 branches missed.">        if(args.length &gt;= 1) {</span>
+            
+            try {
+<span class="nc" id="L20">                width = Integer.parseInt(args[0]);</span>
+            }
+<span class="nc" id="L22">            catch(NumberFormatException e) {}</span>
+            
+        }
+        
+        /* Create MVC Objects */
+
+<span class="nc" id="L28">        TicTacToeModel model = new TicTacToeModel(width);</span>
+<span class="nc" id="L29">        TicTacToeView view = new TicTacToeView(model);</span>
+<span class="nc" id="L30">        TicTacToeController controller = new TicTacToeController(model, view);</span>
+        
+        /* MAIN LOOP */
+        
+<span class="nc" id="L34">        JFrame frame = new JFrame(&quot;Tic-Tac-Toe&quot;);</span>
+        
+<span class="nc" id="L36">        frame.setSize(800,800);</span>
+        
+<span class="nc" id="L38">        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</span>
+<span class="nc" id="L39">        frame.getContentPane().add(view.container);</span>
+<span class="nc" id="L40">        frame.pack();</span>
+<span class="nc" id="L41">        frame.setVisible(true);</span>
+<span class="nc" id="L42">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.7.9.201702052155</span></div></body></html>
